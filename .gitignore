@@ -1,6 +1,9 @@
 # Trained model (regenerate with `python train_model.py`)
 *.joblib
 
+# Generated audio assets (regenerate on first run via the Python code)
+sounds/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -14,5 +17,6 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Claude local settings
-.claude/
+# Claude: ignore everything under .claude/ except the shared project settings
+.claude/*
+!.claude/settings.json
