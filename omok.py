@@ -31,10 +31,10 @@ from tkinter import font as tkfont
 
 BOARD_SIZE = 15
 EMPTY, BLACK, WHITE = 0, 1, 2
-CELL = 42  # pixels between adjacent intersections
-MARGIN = 30  # pixels from canvas edge to outermost line
+CELL = 32  # pixels between adjacent intersections
+MARGIN = 24  # pixels from canvas edge to outermost line
 BOARD_PIXELS = MARGIN * 2 + CELL * (BOARD_SIZE - 1)  # canvas width/height
-STONE_RADIUS = CELL // 2 - 3
+STONE_RADIUS = CELL // 2 - 2
 BOARD_WOOD = "#e6b877"  # wooden goban tan
 LINE_COLOR = "#4a2e12"
 
